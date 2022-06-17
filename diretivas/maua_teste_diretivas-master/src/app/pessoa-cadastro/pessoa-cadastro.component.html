@@ -1,0 +1,18 @@
+<div class="row">
+
+    <div class="col-md-6 form-group">
+        <label for="nomeInput">Nome</label>
+        <input type="text" class="form-control" id="nomeInput" #nomeInput>
+    </div>
+
+    <div class="col-md-6 form-group">
+        <label for="idadeInput">Idade</label>
+        <input type="text" class="form-control" id="idadeInput" #idadeInput>
+    </div>
+
+</div>
+
+<div class="row">
+    <button class="btn btn-primary btn-block mt-3"
+        (click)="adicionar(nomeInput.value, idadeInput.value)">Cadastrar</button>
+</div>

@@ -1,0 +1,35 @@
+<div class="container my-3 border p-3">
+    <div class="form-group">
+        <label for="numeroInput">Escolha um número</label>
+        <input type="number" class="form-control" id="numeroInput" placeholder="Escolha um número" [(ngModel)]="numero">
+    </div>   
+    <div class="alert alert-primary mt-3 p-3 text-center">{{numero}}</div>
+    <button (click)="escolher()" type="button" class="btn btn-primary">Escolher para mim</button>
+</div>
+
+
+
+
+
+<!-- <div class="container m-3 border p-3">
+    <form>
+        <div class="form-group mb-2">
+            <label for="nomeInput">Nome</label>
+            <input id="nomeInput" type="text" class="form-control" placeholder="Digite algo..." #nomeInput>
+        </div>
+        <button (click)="adicionar(nomeInput)" type="button" class="btn btn-primary">
+            Adicionar
+        </button>
+
+        <div class="alert alert-primary mt-3 p-3" [hidden]="esconderCaixa">
+            {{nome}}
+        </div>
+    </form>
+</div>  -->
+
+
+
+
+<!-- Meu nome é {{nome}} e tenho {{idade}} anos.
+
+Valor sorteado: {{lancarDado()}} -->
