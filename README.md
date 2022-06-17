@@ -10,8 +10,7 @@ Modules - Caixas que guardam coisas (componentes etc.)
 
 
 Renderização mutuamente exclusiva: Ou um evento acontece ou o outro acontece
-
-####################################################################################################################
+#######################################################################################
 Componente
 NO componente tem que importar o @Component(){}
 para utilizar é só utilizar o nome que está no selector do componente.
@@ -52,23 +51,21 @@ ngOnInit(): void{
 
 
 
-####################################################################################################################
+#######################################################################################
 Diretiva Estrutural
 Construção do Angular com capacidade de mudar a estrutura da arvore dom
 *ngIf ="nome" 
 Então, a diretiva ngIf é usada para incluir ou excluir um elemento da interface do usuário, incluindo os elementos filhos do elemento. A marcação excluída por uma diretiva ngIf não será invisível, apenas não estará no DOM.
 
 *ngfor = "let cliente of Clientes"
-
-####################################################################################################################
+#######################################################################################
 A pilha MEAN
 
 MongoDB - utiliza NoSQL
 Express - Utilizado para facilitar o codigo para tratamento de requisições HTTP
 Angular - Framework Front End
 NodeJS - executa codigo javascript do lado do servidor
-
-####################################################################################################################
+#######################################################################################
 Talvez seja util
 
  button normalmente da um submit por padrão mas se eu quiser executar js antes disso é só colocar o type dele como button
@@ -104,8 +101,7 @@ onClienteAdicionado(cliente){
 	this.clientes = [cliente, ...this.clientes]
 }
 
-
-####################################################################################################################
+#######################################################################################
 Variavel de referencia de template: 
 uma variavel faz referencia a um elemento do template , ex um input 
 entao fica assim a referencia utilizando o # :
@@ -119,7 +115,7 @@ no componente
 adicionar(nomeInput) void{
 	this.nome = nomeInput.value
 }
-####################################################################################################################
+#######################################################################################
 Data Binding - https://github.com/professorbossini/20221_maua_ecm252_angular_data_binding
 Interpolação - {{}}
 
@@ -202,7 +198,7 @@ onClienteAdcionado(cliente){
 @Output() - torna publica a existencia de um elemento do component.ts
 
 @Input() - Ele recebe algo como parametro, outros elementos enxergam ele como entrada de dados
------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------
 Two Way Data Binding - [(ngModel)]
 
 Utilizamos para que o Componente e o Template se mantenham atualizados
@@ -229,9 +225,7 @@ numero: number
 escolher(): void{
     this.numero = Math.floor(Math.random() * 100) + 1
   }
-
-####################################################################################################################
-
+#######################################################################################
 Podemos utilizar a extensao Subject de rxjs
 ex:
 private listaClientesAtualizada = new Subject<Cliente[]>();
@@ -258,7 +252,7 @@ ngOnInit(): void{
 	}
 }
 
-####################################################################################################################
+#######################################################################################
 
 Template driven form -
  de forma geral ele vai construir um objeto json apartir dos dados inseridos sem precisar do two way data bind em cada campo
@@ -287,8 +281,7 @@ o form fica assim:
 Utilizar required para tornar um campo obrigatorio
 se o form for invalido 
 if(form.invalid) return
-
-####################################################################################################################
+#######################################################################################
 
 
 Dependencia
@@ -324,13 +317,3 @@ constructor(private clienteService : ClienteService()){}
 É necessario dizer ao angular quem providenciara as informações(provider)
 
 no Modules do componente e escreve na parte de ngMOdules providers e coloca o serviço
-![10](https://user-images.githubusercontent.com/87087019/174397210-4c5c8883-5d5e-469a-a49e-776fa63a203a.png)
-![1](https://user-images.githubusercontent.com/87087019/174397213-7d51bce7-03db-44c5-a12b-a797eb3fd3e8.png)
-![2](https://user-images.githubusercontent.com/87087019/174397214-4277f116-218c-430b-a0c2-7c8a34b86005.png)
-![3](https://user-images.githubusercontent.com/87087019/174397218-86ac6e21-ac7a-4ce5-8ca9-ca8b4077bbc2.png)
-![4](https://user-images.githubusercontent.com/87087019/174397220-a00a3d13-f20f-4629-909d-a2276d3b3997.png)
-![5](https://user-images.githubusercontent.com/87087019/174397222-b71bfdd7-ab32-4585-9c38-10ecff8df793.png)
-![6](https://user-images.githubusercontent.com/87087019/174397225-1f235de2-abe4-4ec1-a94c-55edecb556fc.png)
-![7](https://user-images.githubusercontent.com/87087019/174397228-ce68aac4-577d-4866-b79e-c9c9918c1069.png)
-![8](https://user-images.githubusercontent.com/87087019/174397230-8bb6de39-3009-42a7-9aec-ee746532e1e7.png)
-![9](https://user-images.githubusercontent.com/87087019/174397233-b1a03c1d-73dc-43b2-ae3c-4fd3536f33dc.png)
