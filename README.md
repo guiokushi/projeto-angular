@@ -324,3 +324,13 @@ constructor(private clienteService : ClienteService()){}
 É necessario dizer ao angular quem providenciara as informações(provider)
 
 no Modules do componente e escreve na parte de ngMOdules providers e coloca o serviço
+![10](https://user-images.githubusercontent.com/87087019/174397210-4c5c8883-5d5e-469a-a49e-776fa63a203a.png)
+![1](https://user-images.githubusercontent.com/87087019/174397213-7d51bce7-03db-44c5-a12b-a797eb3fd3e8.png)
+![2](https://user-images.githubusercontent.com/87087019/174397214-4277f116-218c-430b-a0c2-7c8a34b86005.png)
+![3](https://user-images.githubusercontent.com/87087019/174397218-86ac6e21-ac7a-4ce5-8ca9-ca8b4077bbc2.png)
+![4](https://user-images.githubusercontent.com/87087019/174397220-a00a3d13-f20f-4629-909d-a2276d3b3997.png)
+![5](https://user-images.githubusercontent.com/87087019/174397222-b71bfdd7-ab32-4585-9c38-10ecff8df793.png)
+![6](https://user-images.githubusercontent.com/87087019/174397225-1f235de2-abe4-4ec1-a94c-55edecb556fc.png)
+![7](https://user-images.githubusercontent.com/87087019/174397228-ce68aac4-577d-4866-b79e-c9c9918c1069.png)
+![8](https://user-images.githubusercontent.com/87087019/174397230-8bb6de39-3009-42a7-9aec-ee746532e1e7.png)
+![9](https://user-images.githubusercontent.com/87087019/174397233-b1a03c1d-73dc-43b2-ae3c-4fd3536f33dc.png)
